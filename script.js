@@ -1,9 +1,3 @@
-//we want to change the data of the 6 badges when we click on the different 
-//timeframes : daily, weekly and monthly
-// if i say let data = [
-//if (daily = 0) {
-
-
 const dailyBtn = document.querySelector('#daily');
 const weeklyBtn = document.querySelector('#weekly');
 const monthlyBtn = document.querySelector('#monthly');
@@ -32,7 +26,7 @@ function weeklyData(){
             })
         })
 }
-// https://raw.githubusercontent.com/christopherjael/time-tracking-dashboard--solution/master/data.json
+
 function monthlyData(){
     fetch('https://raw.githubusercontent.com/Nnenna-udefi/time-tracking-dashboard/main/data.json')
         .then(response => response.json())
